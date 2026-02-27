@@ -5,7 +5,7 @@ tools:
   - read
   - search
   - edit
-  - shell
+  - execute
 ---
 ## Goal
 Build (or restyle) the workshop React/Vite UI following the Naturgy React standards defined in the Copilot Space "React-Standards", and end with a short runbook to launch and test end-to-end.

@@ -5,7 +5,7 @@ tools:
   - read
   - search
   - edit
-  - shell
+  - execute
 ---
 
 # Rol

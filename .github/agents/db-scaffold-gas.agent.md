@@ -5,7 +5,7 @@ tools:
   - read
   - search
   - edit
-  - shell
+  - execute
 ---
 
 ## Goal
@@ -33,11 +33,11 @@ Usar SOLO:
 
 ## Seeding
 Cargar CSVs bajo `_data/db/samples/` en orden:
-1) sample_supply-points.csv
-2) sample_gas-tariffs.csv
-3) sample_gas-conversion-factors.csv
-4) sample_taxes.csv
-5) sample_gas-readings.csv
+1) supply-points.csv
+2) gas-tariffs.csv
+3) gas-conversion-factors.csv
+4) taxes.csv
+5) gas-readings.csv
 
 Reglas:
 - Idempotente (reiniciar no duplica)
