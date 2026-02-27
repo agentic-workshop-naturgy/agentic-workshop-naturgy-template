@@ -1,6 +1,6 @@
 ---
 name: db-scaffold
-description: Modela JPA/H2 para workshop de facturación GAS (lecturas m³, conversión, tarifas, IVA parametrizable) y carga seed desde `_data/db/samples/gas/*.csv`.
+description: Modela JPA/H2 para workshop de facturación GAS (lecturas m³, conversión, tarifas, IVA parametrizable) y carga seed desde `_data/db/samples/*.csv`.
 tools:
   - read
   - search
@@ -13,8 +13,8 @@ Crear el modelo de persistencia (JPA + H2) y la carga de seed para arrancar el w
 
 ## SSOT (no negociable)
 Usar SOLO:
-- `_data/specs/gas/csv-spec.txt`
-- `_data/specs/gas/logic-spec.txt`
+- `_data/specs/gas_csv-spec.txt`
+- `_data/specs/gas_logic-spec.txt`
 
 ## What to build
 ### Entidades JPA + repos
@@ -32,16 +32,16 @@ Usar SOLO:
 - Validaciones mínimas a nivel import (si el repo lo hace ahí) y/o a nivel servicio
 
 ## Seeding
-Cargar CSVs bajo `_data/db/samples/gas/` en orden:
-1) supply-points.csv
-2) gas-tariffs.csv
-3) gas-conversion-factors.csv
-4) taxes.csv
-5) gas-readings.csv
+Cargar CSVs bajo `_data/db/samples/` en orden:
+1) sample_supply-points.csv
+2) sample_gas-tariffs.csv
+3) sample_gas-conversion-factors.csv
+4) sample_taxes.csv
+5) sample_gas-readings.csv
 
 Reglas:
 - Idempotente (reiniciar no duplica)
-- Si falta un CSV: la app debe bootear igual y dejar nota mínima en `_data/specs/gas/clarifications.txt`
+- Si falta un CSV: la app debe bootear igual y dejar nota mínima en `_data/specs/clarifications.txt`
 - Si un CSV está malformado: fallo claro sin dejar DB corrupta
 
 ## Minimal test

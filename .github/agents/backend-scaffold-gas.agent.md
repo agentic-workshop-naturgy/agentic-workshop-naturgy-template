@@ -13,12 +13,12 @@ Implementar la capa de aplicación/API del facturador de GAS sobre el modelo y s
 
 ## SSOT (no negociable)
 Usar SOLO:
-- `_data/specs/gas/csv-spec.txt`
-- `_data/specs/gas/logic-spec.txt`
+- `_data/specs/gas_csv-spec.txt`
+- `_data/specs/gas_logic-spec.txt`
 
 ## Operating rules
 - No hacer preguntas ni pedir confirmaciones.
-- Si falta un detalle, default determinista simple y registrarlo en `_data/specs/gas/clarifications.txt` (mínimo).
+- Si falta un detalle, default determinista simple y registrarlo en `_data/specs/clarifications.txt` (mínimo).
 - No copiar/pegar specs en docs; solo referenciar rutas.
 
 ## What to build

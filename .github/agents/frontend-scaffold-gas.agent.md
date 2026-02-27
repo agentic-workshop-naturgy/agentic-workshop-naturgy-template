@@ -13,8 +13,8 @@ Crear la UI E2E para facturación de GAS y terminar con un runbook corto para le
 
 ## SSOT (no negociable)
 Usar SOLO:
-- `_data/specs/gas/csv-spec.txt`
-- `_data/specs/gas/logic-spec.txt`
+- `_data/specs/gas_csv-spec.txt`
+- `_data/specs/gas_logic-spec.txt`
 
 ## What to build
 - React + Vite + TypeScript en `frontend/`

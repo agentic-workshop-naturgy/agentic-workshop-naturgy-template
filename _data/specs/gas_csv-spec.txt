@@ -1,10 +1,10 @@
 # GAS Workshop — CSV Spec (SSOT)
 # Paths
-# - Samples live in: _data/db/samples/gas/
+# - Samples live in: _data/db/samples/
 # - This file is the single source of truth for DB schema + CSV import formats.
 
 ## 1) supply-points.csv  (Maestro de puntos de suministro)
-File: _data/db/samples/gas/supply-points.csv
+File: _data/db/samples/supply-points.csv
 
 Columns (required unless stated):
 - cups (string, PK)              # e.g. ES0021000000001AA
@@ -17,7 +17,7 @@ Constraints / validations:
 - estado in {ACTIVO, INACTIVO}
 
 ## 2) gas-readings.csv  (Lecturas de contador en m³)
-File: _data/db/samples/gas/gas-readings.csv
+File: _data/db/samples/gas-readings.csv
 
 Columns:
 - cups (string, FK -> supply-points.cups)
@@ -41,7 +41,7 @@ Workshop rule for negative consumption:
 - If lectura_fin < lectura_inicio: billing error row (do not invoice).
 
 ## 3) gas-tariffs.csv  (Tarifario: término fijo + variable)
-File: _data/db/samples/gas/gas-tariffs.csv
+File: _data/db/samples/gas-tariffs.csv
 
 Columns:
 - tarifa (string, PK)            # RL1, RL2, RL3...
@@ -56,7 +56,7 @@ Constraints / validations:
 - When selecting tariff for a period end date, pick the row with max(vigencia_desde) <= period_end.
 
 ## 4) gas-conversion-factors.csv  (Factores conversión por zona/mes)
-File: _data/db/samples/gas/gas-conversion-factors.csv
+File: _data/db/samples/gas-conversion-factors.csv
 
 Columns:
 - zona (string)
@@ -70,7 +70,7 @@ Constraints / validations:
 - pcs_kwh_m3 > 0
 
 ## 5) taxes.csv  (IVA parametrizable)
-File: _data/db/samples/gas/taxes.csv
+File: _data/db/samples/taxes.csv
 
 Columns:
 - taxCode (string, PK)           # e.g. IVA

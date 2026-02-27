@@ -2,17 +2,17 @@
 
 ## SSOT
 Usar ONLY:
-- `_data/specs/gas/csv-spec.txt`
-- `_data/specs/gas/logic-spec.txt`
+- `_data/specs/gas_csv-spec.txt`
+- `_data/specs/gas_logic-spec.txt`
 
 ## Seed data
 Cargar CSVs (según existan) bajo:
-- `_data/db/samples/gas/`
+- `_data/db/samples/`
 
 ## No questions / no confirmations
 Los agentes no deben hacer preguntas.
 Si falta un detalle, elegir default determinista simple y registrar nota mínima en:
-- `_data/specs/gas/clarifications.txt`
+- `_data/specs/clarifications.txt`
 
 ## Outcome (E2E)
 - Backend Spring Boot (Java, Maven, H2, JPA):
